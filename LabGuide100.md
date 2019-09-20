@@ -61,37 +61,48 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ![](images/100/oic13.png)
 
 ### Step 15 After you click Finish, there is a map created along with the connection
+![](images/100/oic14.png)
 
 ### Step 16 Click the + sign again to add the ATP connection
 ![](images/100/oic16.png)
 
-### Step 17 Give it a proper name and optional description. Choose what you want to do with the database, here we are trying to post Instances to database
+### Step 17 Give it a proper name. Choose what you want to do with the database, here we are trying to insert instances to database
 ![](images/100/oic17.png)
 
-### Step 18 Click on finish and you will see two mappers on the canvas
-
-### Step 19 Now let's do the mapping. Click on the first mapper
+### Step 18  Click Next, choose **Admin** as Schema and hit search. Locate **Incidents** table and Import tables
 ![](images/100/oic18.png)
 
-### Step 20 Map the attributes and click Validate on the top right corner
-![](images/100/oic18.png)
-
-### Step 21 Go to the second mapper
+### Step 19 Select all the attributes except **status comments incidentID**
 ![](images/100/oic19.png)
 
-### Step 22 Click on the Status
+### Step 20 Click Next and click **Edit**
 ![](images/100/oic20.png)
 
-### Step 23 Type in "Success" and click Save
+### Step 21 Click on finish and you will see two mappers on the canvas
+
+
+### Step 22 Now let's do the mapping. Click on the first mapper
 ![](images/100/oic21.png)
 
-### Step 24 Last step is to add the tracking, click the hamburger icon on the top right corner
+### Step 23 Map the attributes and click Validate on the top right corner
 ![](images/100/oic22.png)
 
-### Step 25 Go back to the homepage and click on the Activate button
+### Step 24 Go to the second mapper
 ![](images/100/oic23.png)
 
-### Step 26 Allow Tracking and Payload
+### Step 25 Click on the Status
 ![](images/100/oic24.png)
+
+### Step 26 Type in "Success" and click Save
+![](images/100/oic26.png)
+
+### Step 27 Last step is to add the tracking, click the hamburger icon on the top right corner
+![](images/100/oic27.png)
+
+### Step 28 Go back to the homepage and click on the Activate button
+![](images/100/oic28.png)
+
+### Step 29 Allow Tracking and Payload
+![](images/100/oic29.png)
 
 Note: Now your first integration is finished and you can test it on Postman
