@@ -44,10 +44,10 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 8 Give the rest connection a name without the connection and security authentication details
 ![](images/100/oic7.png)
 
-### Step 9 Now, let's move to Integration tab
+### Step 9 Now, let's move to Integration tab, and click the Create on the top right
 ![](images/100/oic8.png)
 
-### Step 10 Click the Create on the top right, and choose the App-Driven architecture
+### Step 10 Choose the App-Driven architecture
 ![](images/100/oic9.png)
 
 ### Step 11 Give it a proper name and click on create
@@ -56,25 +56,22 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 12 An empty canvas will appear and click on the + sign to add the Rest Connection you just created
 ![](images/100/oic11.png)
 
-### Step 13 Give it a proper name and optional description
+### Step 13 Give it a proper name, fill the information like the screenshot, and click Next
 ![](images/100/oic12.png)
-
-### Step 14 Fill the information like the screenshot, and click Next
 ![](images/100/oic13.png)
 
 ### Step 15 After you click Finish, there is a map created along with the connection
 
-
 ### Step 16 Click the + sign again to add the ATP connection
-![](images/100/oic14.png)
+![](images/100/oic16.png)
 
 ### Step 17 Give it a proper name and optional description. Choose what you want to do with the database, here we are trying to post Instances to database
-![](images/100/oic16.png)
+![](images/100/oic17.png)
 
 ### Step 18 Click on finish and you will see two mappers on the canvas
 
 ### Step 19 Now let's do the mapping. Click on the first mapper
-![](images/100/oic17.png)
+![](images/100/oic18.png)
 
 ### Step 20 Map the attributes and click Validate on the top right corner
 ![](images/100/oic18.png)
