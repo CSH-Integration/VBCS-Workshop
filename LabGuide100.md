@@ -102,10 +102,16 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 27 Last step is to add the tracking, click the hamburger icon on the top right corner
 ![](images/100/oic26.png)
 
-### Step 28 Go back to the homepage and click on the Activate button
+### Step 28 Drag **IncidentNo** to tracking Field
 ![](images/100/oic27.png)
 
-### Step 29 Allow Tracking and Payload
+### Step 29 Go back to the homepage and click on the Activate button
 ![](images/100/oic28.png)
 
+### Step 30 Allow Tracking and Payload
+![](images/100/oic29.png)
+
 Note: Now your first integration is finished and you can test it on Postman
+
+##  Import the rest two integrations into your environment
+
