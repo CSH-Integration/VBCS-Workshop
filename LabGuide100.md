@@ -19,7 +19,7 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 
 # Using OIC to Connect the Database
 
-##  Create the InsertIncidents Integration
+##  1. Create the InsertIncidents Integration
 
 ### Step 1 Launch the OIC homepage, click the Integration tab
 ![](images/100/oic1.png)
@@ -111,7 +111,7 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 30 Allow Tracking and Payload
 ![](images/100/oic29.png)
 
-Note: Now your first integration is finished and you can test it on Postman
 
-##  Import the rest two integrations into your environment
+##  2. Import the integrations
 
+Congratulations that you have completed the first integration! You can test it on Postman. To save some time, we have imported the rest two integrations into the environment. Next you are ready for LabGuide 200.
