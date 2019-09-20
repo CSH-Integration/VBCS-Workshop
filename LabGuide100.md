@@ -21,108 +21,82 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 
 ##  Create the InsertIncidents Integration
 
-### Step 1
-Log into Oracle Cloud and locate **Integration** service, and open the console service
+### Step 1 Log into Oracle Cloud and locate **Integration** service, and open the console service
 ![](images/100/oic1.png)
 
-###Step 2
-Once you reach the OIC homepage, click the Integration tab
+### Step 2 Once you reach the OIC homepage, click the Integration tab
 ![](images/100/oic2.png)
 
-###Step
-Open the Connection tab to create the ATP connection
+### Step 3 Open the Connection tab to create the ATP connection
 ![](images/100/oic3.png)
 
-###Step
-Click Create on the top right, and search for the ATP connector in the wizard
+### Step 4 Click Create on the top right, and search for the ATP connector in the wizard
 ![](images/100/oic4.png)
 
-###Step
-Choose ATP, and give it a proper name and some description:
+### Step 5 Choose ATP, and give it a proper name and some description:
 ![](images/100/oic5.png)
 
-###Step
-Fill in the connection and security authentication details
+### Step 6 Fill in the connection and security authentication details
 ![](images/100/oic6.png)
 
-###Step
-Test it and save it
+### Step 7 Test it and save it
 ![](images/100/oic7.png)
 
-###Step
-Similarly, create a Rest connection like the above
+### Step 8 Similarly, create a Rest connection like the above
 ![](images/100/oic8.png)
 
-###Step
-Now, let's move to Integration tab
+### Step 9 Now, let's move to Integration tab
 ![](images/100/oic9.png)
 
-###Step
-Click the Create on the top right, and choose the App-Driven architecture
+### Step 10 Click the Create on the top right, and choose the App-Driven architecture
 ![](images/100/oic10.png)
 
-###Step
-Give it a proper name and click on create
+### Step 11 Give it a proper name and click on create
 ![](images/100/oic11.png)
 
-###Step
-An empty canvas will appear and click on the + sign to add the Rest Connection you just created
+### Step 12 An empty canvas will appear and click on the + sign to add the Rest Connection you just created
 ![](images/100/oic12.png)
 
-###Step
-Give it a proper name and optional description
+### Step 13 Give it a proper name and optional description
 ![](images/100/oic13.png)
 
-###Step
-Fill the information like the screenshot, and click Next
+### Step 14 Fill the information like the screenshot, and click Next
 ![](images/100/oic14.png)
 
-###Step
-After you click Finish, there is a map created along with the connection
+### Step 15 After you click Finish, there is a map created along with the connection
 ![](images/100/oic16.png)
 
-###Step
-Click the + sign again to add the ATP connection
+### Step 16 Click the + sign again to add the ATP connection
 ![](images/100/oic17.png)
 
-###Step
-Give it a proper name and optional description
+### Step 17 Give it a proper name and optional description
 ![](images/100/oic18.png)
 
-###Step
-Choose what you want to do with the database, here we are trying to post Instances to database
+### Step 18 Choose what you want to do with the database, here we are trying to post Instances to database
 ![](images/100/oic19.png)
 
-###Step
-Click on finish and you will see two mappers on the canvas
+### Step 19 Click on finish and you will see two mappers on the canvas
 ![](images/100/oic20.png)
 
-###Step
-Now let's do the mapping. Click on the first mapper
+### Step 20 Now let's do the mapping. Click on the first mapper
 ![](images/100/oic21.png)
 
-###Step
-Map the attributes and click Validate on the top right corner
+### Step 21 Map the attributes and click Validate on the top right corner
 ![](images/100/oic22.png)
 
-###Step
-Go to the second mapper and click on the Status
+### Step 22 Go to the second mapper and click on the Status
 ![](images/100/oic23.png)
 
-###Step
-Type in "Success" and click Validate
+### Step 23 Type in "Success" and click Validate
 ![](images/100/oic24.png)
 
-###Step
-Last step is to add the tracking, click the hamburger icon on the top right corner
+### Step 24 Last step is to add the tracking, click the hamburger icon on the top right corner
 ![](images/100/oic25.png)
 
-###Step
-Go back to the homepage and click on the Activate button
+### Step 25 Go back to the homepage and click on the Activate button
 ![](images/100/oic26.png)
 
-###Step
-Allow Tracking and Payload
+### Step 26 Allow Tracking and Payload
 ![](images/100/oic27.png)
 
 Note: Now your first integration is finished and you can test it on Postman
