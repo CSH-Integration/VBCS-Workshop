@@ -58,10 +58,12 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 
 ### Step 13 Give it a proper name, fill the information like the screenshot, and click Next
 ![](images/100/oic12.png)
+
+## Step 14 Fill the JSON example for request and response
 ![](images/100/oic13.png)
+![](images/100/oic14.png)
 
 ### Step 15 After you click Finish, there is a map created along with the connection
-![](images/100/oic14.png)
 
 ### Step 16 Click the + sign again to add the ATP connection
 ![](images/100/oic16.png)
@@ -72,11 +74,12 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 18  Click Next, choose **Admin** as Schema and hit search. Locate **Incidents** table and Import tables
 ![](images/100/oic18.png)
 
-### Step 19 Select all the attributes except **status comments incidentID**
+### Step 19 Click Next and click **Edit**
+![](images/100/oic20.png)
+
+### Step 20 Select all the attributes except **status, comments, incidentID**
 ![](images/100/oic19.png)
 
-### Step 20 Click Next and click **Edit**
-![](images/100/oic20.png)
 
 ### Step 21 Click on finish and you will see two mappers on the canvas
 
@@ -90,19 +93,19 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 24 Go to the second mapper
 ![](images/100/oic23.png)
 
-### Step 25 Click on the Status
+### Step 25 Click on the **Result**
 ![](images/100/oic24.png)
 
 ### Step 26 Type in "Success" and click Save
-![](images/100/oic26.png)
+![](images/100/oic25.png)
 
 ### Step 27 Last step is to add the tracking, click the hamburger icon on the top right corner
-![](images/100/oic27.png)
+![](images/100/oic26.png)
 
 ### Step 28 Go back to the homepage and click on the Activate button
-![](images/100/oic28.png)
+![](images/100/oic27.png)
 
 ### Step 29 Allow Tracking and Payload
-![](images/100/oic29.png)
+![](images/100/oic28.png)
 
 Note: Now your first integration is finished and you can test it on Postman
