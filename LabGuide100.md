@@ -1,4 +1,4 @@
-![](images/200/Picture-Title.png)
+ ![](images/200/Picture-Title.png)
 
 # LabGuide 100 - Creating the ATP Integration on OIC
 
