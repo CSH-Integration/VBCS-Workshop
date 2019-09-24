@@ -1,154 +1,249 @@
 ![](images/Picture-Title.png)
 
-# Lab 200 - Adding Update and Edit Pages
+# Lab 200 - Creating a Visual Builder Application
 
 ## Introduction
 
- This lab will walk you through adding pages to your application, adding data and editing data inside the Visual Builder Cloud Service.
+This is the second of several labs that are part of the **Oracle Visual Builder Cloud Service workshop.** This lab will walk you through creating a mobile application so that site workers can log incidents and search FAQ's. We will also learn how to create and use Business Objects, modify page user interface.
 
 ## Objectives
 
-Now that we have a display of our data, the next steps are to allow additions and edits of that data. This will allow users to add new wines as they become available and edit the inventory/reserved counts.
+- Begin Creating a Mobile Application
+  - Create application within Visual Builder user interface
+  - Add business data for application to display
+- Create the Application Pages
+  - Create pages for displaying business data
+  - Modify User Interface of the Home Page
 
-- Create Pages to Add and Edit Content
-  - Create a page to allow users to add data
-  - Create a page to allow users to edit data
+# Create an Application and Import Business Data
 
-## Required Artifacts
+##  Create the Application
 
-- This lab assumes that you have completed the [Lab 100](LabGuide100.md).
+### **STEP 1**: Access Visual Builder Cloud Service
 
-## Creating and Editing Pages
+- Click on the **Hamburger** icon at the top of the page and click on **Home** icon to **Open OIC Homepage**
 
-### **STEP 1** Create a New Page
+ ![](images/200/image001.png)
 
-- In the **Designer View** of our app, click inside the list component but outside an individual item so that the List is selected and the **List View** tag is displayed in blue.
+- Click on **Visual Builder** to **Open Visual Builder Cloud Service HomePage**.
 
-  ![](images/200/listSelected.png)
+  ![](images/200/image002.png)
 
-- In the right hand menu select the **Quick Start** icon. Then click **Add Create Page**.
+- Click **New Application** button to start the application create wizard.
 
-  ![](images/200/LabGuide200-252f126c.png)
+  ![](images/200/image003.png)
 
-- This will bring up a two step wizard. For the first step, we will click on the **Inventory** business object and click **Next**.
+- On Details screen enter the following data and click on **Next**.
 
-  ![](images/200/LabGuide200-15284f3c.png)
+  In the Create Application dialog box, enter the following, then press **Create**.
 
-- This will bring us to the **Page Detail** step where we can select the fields we would like to make available for creating new records. We'll select the following:
+  - **Application Name:** ```HealthSafetyApp```
+  - **Description:** ```VBCS Workshop```
+  - **Application ID:** The text field is automatically populated as you type based on the Application Name.
 
-  - name
-  - quantity
-  - reserved
-  - variant
+    ![](images/200/image005.png)
 
-  ![](images/200/LabGuide200-e9c3b310.png)
+  **NOTE:** _If you receive a browser warning please update/change your browser to a compatible version._
 
-- Also adjust the **Button Label** to simply "Create" and click **Finish**.
+    ![](images/200/LabGuide100-01eb5aff.png)
 
-  ![](images/200/LabGuide200-e1569d1d.png)
+- You now have a new application, in which you can begin building pages and adding data.
 
-- You will be presented with the main page of the app again. In order to view the new page  select the monitor icon, and expand **InventoryWebApp --> flows --> main** dropdown then select **CreateInventory**.
+  ![](images/200/welcome.png)
 
-  ![](images/200/LabGuide200-743dc668.png)
+## Import Business Data
 
-- You should see a view of your new form appear.
+### **STEP 1**: Importing Business Data
 
-  ![](images/200/LabGuide200-df2591bd.png)
+In this step we will create a new business object to host data for our application.
 
-- With this page created we can toggle to live mode right to interact with the app and add new data. To enable live mode, click the **Live** button above the right side panel.
+- Open the **Business Objects** by clicking on the "Business Objects" button.
 
-  ![](images/200/liveButton.png)
+  ![](images/200/image006.png)
 
-- Once in live mode, enter a new wine and click **Save**. You can enter your favorite wine or use the following example:
+- Click the "menu" icon and select "Data Manager" from the dropdown to open the import tool.
 
-  - **name:** ```  Ice  ```
-  - **quantity:** ```  50  ```
-  - **reserved:** ```  0  ```
-  - **variant:** ```  white  ```
+  ![](images/200/openDataManager.png)
 
-  ![](images/200/LabGuide200-dc8bd8fe.png)
+- Now we'll import the App data from a file. In the right hand pane select the **Import Business Objects** window.
 
-  The save may take a few seconds, you'll will first see the image below.
+  ![](images/200/image007.png)
 
-  ![](images/200/LabGuide200-92be9188.png)
+- Download this spreadsheet <a href="https://github.com/CSH-Integration/VBCS-Workshop/blob/master/avbcsMisc/SafetyApp.xlsx" target="new">SafetyApp.xlsx</a> to your local machine. When prompted upload this file to create a new business object.
 
-  Once the save is complete the following image will appear.
+  ![](images/200/LabGuide100-97eff54f.png)
 
-  ![](images/200/LabGuide200-b055e910.png)
+- You will see a popup stating that the upload is taking place and it will confirm that the upload finished with a message stating "Upload succeeded."
 
-- To view our new entry click on the tab for your main page.
+  ![](images/200/image008.png)
 
-  ![](images/200/LabGuide200-8a1542ea.png)
+- Click **Next**
 
-- Then press the **Run** button.
+  ![](images/200/LabGuide100-d8475aae.png)
 
-  ![](images/200/LabGuide200-c22e5c87.png)
+- The business objects will be displayed with the option to edit the names, we will be leaving the names as they are and click **Next**.
 
-- In the new browser tab you'll see our added data is in the list, and also note that there is a new **Create** button which was added for us by using the **Quick Start** guide. Buttons are automatically created to link pages inside the quick start guide.
+  ![](images/200/image009.png)    
 
-  ![](images/200/LabGuide200-b7a2d3dc.png)
+- The next step will display the fields that will be created and will detect the data types and set them accordingly. You can edit the names and types here but we will be leaving them as they are imported. Click **Finish**.
 
-- Close your new tab. Then exit Live mode by selecting the **Design** button.
+  ![](images/200/image010.png)
 
-  ![](images/200/LabGuide200-42ac6cc4.png)
+- Once the import is finished, you will receive a message showing the business objects that have been imported. Click the **Close** button.
 
-### **STEP 2** Add Edit Page
+  ![](images/200/image011.png)
 
-- Now lets use the **Quick Start** guide to add an **Edit** page and a **Delete** button to our app's main page. Once again, click on the **List** component outside of a specific item so that the **List View** tag appears.
+- You should now see the **Employees** **FAQ** and **Sites** business objects in the panel on the left. Click on the **Employees** Business Object. If the objects do not immediately appear refresh your browser.
 
-  ![](images/200/listSelected.png)
+  ![](images/200/image012.png)
 
-- Now the **List View** detail panel should be displayed on the right. Click on the **Quick Start** icon and we'll see the links to add pages. Then click on **Add Edit Page** in the right panel.
+- You will see the details of the business object in the right hand panel.
 
-  ![](images/200/addEditPage.png)
+  ![](images/200/image013.png)
 
-- Select the inventory business object as the read endpoint. Then click **Next**.
+- Now lets see how we can define parent/child relationship between Business Objects. For our example we have **Sites** which is our parent and **Employee**, since many employees work on a site.
 
-  ![](images/200/LabGuide200-995325c2.png)
+- Click on the **+** button under Relationship a pop-up will come up as shown below.
 
-- Select the Inventory business object as the update endpoint and click **Next**.
+  ![](images/200/image013a.png)
 
-  ![](images/200/LabGuide200-a60ec865.png)
+- From right box select **Sites** and click **Create Relationship** 
 
-- In the **Page Details** step we'll select the fields we want displayed on our edit page, and then click **Finish**. Here we'll select:
+  ![](images/200/image013b.png)
 
-  - Name
-  - Variant
-  - Quantity
-  - Reserved
+- Now Click on **Data** tab under **Employees** Business Object and you can see there new field is ```Sites(sities)``` this is foreign key of **Sites**.
 
-  ![](images/200/LabGuide200-1b4c63cf.png)
+  ![](images/200/image013c.png)
 
-- Once the creation process completes click on the **main-start** page tab.
+- Now lets assign the site to our employees by editting first record. **Select** first record and click **edit icon** as shown below.
 
-  ![](images/200/LabGuide200-0fc6d691.png)
+  ![](images/200/image013d.png)
 
- - The open the **Live** mode by clicking the "Live" button above the right panel we can test our edit page.
+- A Dialog box appears click on **Sites** drop-down and select first option and click save.
 
-   ![](images/200/LabGuide200-cd415c35.png)
+  ![](images/200/image013e.png)
 
-- Select the row from the table you created earlier and press the **Edit Inventory** button. Note that the Edit Inventory button will become selectable once an item is selected in **Live** mode.
+- Similarly assign site to second employee too.
 
-  ![](images/200/LabGuide200-40720a3a.png)
+  ![](images/200/image013f.png)
 
-- Change the quantity of your entry to 45 and press **Save**.
 
-  ![](images/200/LabGuide200-fa6c982b.png)
+### **STEP 2:** Creating the Mobile App
 
-- You will see the inventory level adjust on your main-start page.
+Now that we have data for our app to display we can build our mobile app.
 
-  ![](images/200/LabGuide200-fd9a06a2.png)
+- Click on the **mobile** icon in the left panel to open the mobile apps panel. Then click on the **+ Mobile Application** button to create a new web app.
 
-  **NOTE:** If the value does not immediate update press the reload button at the top of the page._
+  ![](images/200/image014.png)
 
-  ![](images/200/LabGuide200-a6016421.png)
+- You will be presented with the New Mobile Application window. In this window, name the mobile application ```HealthSafetyMobileApp``` and choose the  Horizontal navigation style, in Navigation Items delete one item by clicking on **X** enter ```Home``` and ```My Incidents``` then click **Finish**.
 
-- If we go back to our **main** tab we can now see our apps structure:
+  ![](images/200/image015.png)
 
-  ![](images/200/LabGuide200-572185e2.png)
+- You will see the new app created with the name **home-start**. To keep the page clean close all your web application pages.
+
+  ![](images/200/image016.png)
+
+### **STEP 3**: Add Mobile App Pages
+
+- At this point you should be seeing a view of your mobile application in the development console. We'll now begin by add components on our homepage.
+
+  ![](images/200/image017.png)
+
+- The main page for our application is created for us automatically, so we will begin by adding components to our homepage data. Let us assume UX team provided with the homepage design like as shown below.
+
+  ![](images/200/image018.png)
+
+- First let us rename the page title by clicking on page title and entering ```Safety Actions``` on right navigation as shown below. 
+
+  ![](images/200/image019.png)
+
+- Next from the component list, drag and drop **Grid Container** over to the Page Structure right on top of **Flex Container**
+
+  ![](images/200/image020.png)
+
+- Similary from the component list, drag and drop **Button** over to the Page Structure right on top of **Grid Container**. In right side menu under General tab enter text as ```Incident``` and select **Full** option for chroming.
+  
+  ![](images/200/image021.png)
+
+- Now, to put a start icon on the button, click **+** near **startIcon** under Slots and select **icon** from menu.
+
+  ![](images/200/image022.png)
+
+- Click on **icon** under **startIcon** as shown below
+
+  ![](images/200/image023.png)
+
+- Click on the button next to **Image** and select **Warning Sheet** icon.
+
+  ![](images/200/image024.png)
+
+  ![](images/200/image025.png)
+
+- Since we have two buttons in one grid we will drop another button under the same Grid Container and name it as ```Hazard``` Select chroming **Full** and start icon **Warning** similarly as done for above button. 
+
+  ![](images/200/image026.png)
+
+- Repeat the last 5 steps to add another **Grid Container** on top of **Flex Container** and add two more buttons with following details.
+
+- **Text/Name**: FAQ,Inspection
+- **Chroming**: Full
+- **Start Icon**: Catalog, Checkmark
+
+  ![](images/200/image027.png)
+
+- Now as you can see all our buttons are not aligned as per the design, to align it click on **Flex Container** and Select Direction as **Horizontal**.
+
+  ![](images/200/image028.png)
+
+- Still our UI seems a bit off from our design, in new step we will see how we can style our home
+
+
+### **STEP 4**: Styling HomePage (CSS)
+
+- Note: All styling in VBCS applications happens manually in CSS. There are no declarative features for changing the display of text or images. As all VBCS applications are just JET applications, they use JET Themes to style the applications. Read the <a href="https://docs.oracle.com/en/middleware/jet/4.2.0/develop/theming-applications.html" target="new">JET Dev Guide on Themes</a> for more information. By default, all VBCS applications use the Alta UI Theme. VBCS applications have a built-in app.css file that you can use to define additional styling on top of the main Alta theme. If, you want to style the core elements of a VBCS theme, you should use SASS variables and generate the CSS rather than coding against the DOM elements directly using oj-* selectors in app.css. The reason is that the internal DOM of JET elements can and does change between releases of JET. Therefore a CSS that worked in one release may not work in another. SASS variables insulate you from these changes.
+
+- From Left Navigator open **app.css** by expanding **resources > css**
+
+  ![](images/200/image029.png)
+
+- Copy paste the below code in app.css
+```css
+.dash-btn {
+    height:200px;
+    width:100%;
+}
+
+.dash-grid-container {
+  margin-top: 70px;
+  padding: 0 5px  10px;
+}
+```
+
+- Now let us add those css class to our components, first we will add the css to our **Grid Container**. Click first **Grid Container** from Page structure  then from left navigation select **All** tab and expand **General Attributes** and add css class ```dash-grid-container```. Note make sure there is a space between existing class and newly add class.
+
+  ![](images/200/image030.png)
+
+- Next let us add css to out button component to make it look bigger as per design. To do so Click first **Button** from Page structure  then from left navigation select **All** tab and expand **General Attributes** and add css class ```dash-btn```.
+
+  ![](images/200/image031.png)
+
+
+- The other way of apply css class is by switching to code view. Lets apply the css class to other grid container and all remaining buttons by switching to code view. Click on the **Code** button on upper right corner.
+
+  ![](images/200/image032.png)
+
+- Add the css class ```dash-grid-container``` to the remaining **Grid Container** and ```class="dash-btn"``` to all remaining buttons
+
+  ![](images/200/image033.png)
+
+- At this point your home page should look like as shown below.
+
+  ![](images/200/image034.png)
+
 
 # Summary
 
-We have now created an application in Visual Builder Cloud Service, added our business data, and added pages to display, add to, and edit our data all with very little need for code.
+  We have now created a mobile application in Visual Builder Cloud Service, added our business object. The next lab in the series will guide us through add new pages to create incidents and send data to Oracle ATP Database leveraging the Integration we created in lab 100.
 
 - You may proceed to [Lab 300](LabGuide300.md)
