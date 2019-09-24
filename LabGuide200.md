@@ -21,9 +21,9 @@ This is the second of several labs that are part of the **Oracle Visual Builder 
 
 ### **STEP 1**: Access Visual Builder Cloud Service
 
-- Click on the **Hamburger** icon at the top of the page and click on **Home** icon to **Open OIC Homepage**.
+- Click on the **Hamburger** icon at the top of the page and click on **Home** icon to **Open OIC Homepage**
 
-  ![](images/200/image001.png)
+ ![](images/200/image001.png)
 
 - Click on **Visual Builder** to **Open Visual Builder Cloud Service HomePage**.
 
