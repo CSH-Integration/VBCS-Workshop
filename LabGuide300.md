@@ -96,7 +96,7 @@ Now we'll add a page to Create Incident and once that is complete we'll define v
 
 - Now Click on **Variables** tab and click **+ Variable** button to create variable to store user input
 
-  ![](images/300/image016.png)
+  ![](images/300/new6.png)
 
 - Enter **id** as ```createIncident``` and select **Type** as ```postCREATEINCIDENTS1_0IncidentCreate``` and click **Create & New**
 
@@ -386,5 +386,4 @@ In this steps we will define action chains to take picture from camera and submi
 
 - Now Click on **Incident** Enter the **details**, **upload picture** and hit **Submit** 
 
-
-- **This completes Lab 300 and continue to the Lab 400 [Labguide400]**
+ **This completes Lab 300 and continue to the [Lab 400](LabGuide400.md)**
