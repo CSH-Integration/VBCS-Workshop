@@ -97,10 +97,10 @@ Copy to the Response Inline:
 ### Step 18  Click Next, choose **Admin** as Schema and hit search. Locate **Incidents** table and Import tables
 ![](images/100/oic18.png)
 
-### Step 19 Click Next and click **Edit**
+### Step 19 Click on the 2nd **Edit**
 ![](images/100/oic20.png)
 
-### Step 20 Select all the attributes except **status, comments, incidentID**
+### Step 20 Select all the attributes except "status, comments, incidentID"
 ![](images/100/oic19.png)
 
 
@@ -147,6 +147,6 @@ Copy to the Response Inline:
 
 
 ## Congratulations that you have completed the first integration!  
+Optional: you can test it on Postman. 
 
-You can test it on Postman. 
 To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
