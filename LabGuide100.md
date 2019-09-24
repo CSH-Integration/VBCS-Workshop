@@ -70,22 +70,21 @@ Password:Tetratech123**
 
 ## Step 14 Fill the JSON example for request and response
 
-Copy to Request Inline:  ```Javascript {"IncidentNo":"3554",  
+Copy to Request Inline:``` {"IncidentNo":"3554",  
   "EmployeeID":"31324",  
   "Description":"HFKEKJAHKDSHFKD",  
  "Severity":"High",  
  "SiteID":10,  
  "Image":"TJUEWTW73125686427489724OW30"} ```
 
-
- 
 ![](images/100/oic13.png)
 
-
-![](images/100/oic14.png)
 Copy to the Response Inline:   
 
-{"result":"success"}
+```{"result":"success"}```
+
+![](images/100/oic14.png)
+
 
 ### Step 15 After you click Finish, there is a map created along with the connection
 
@@ -111,8 +110,19 @@ Copy to the Response Inline:
 ### Step 22 Now let's do the mapping. Click on the first mapper
 ![](images/100/oic21.png)
 
-### Step 23 Map the attributes and click **Validate** on the top right corner
-![](images/100/oic22.png)
+### Step 23 Map the attributes 
+- Map the **Employee ID**, **Description**, **Severity**, **SiteID**, **Image**, and click on the **id**
+
+![](images/100/mapper1.png)
+
+- Under the **Mapping Componment**, search for the **generate-guid** and drag to the right red box
+![](images/100/mapper2.png)
+
+- Close it and the **id** should like the screenshot:
+![](images/100/mapper4.png)
+
+-click **Validate** on the top right corner
+
 
 ### Step 24 Go to the second mapper
 ![](images/100/oic23.png)
@@ -138,4 +148,5 @@ Copy to the Response Inline:
 
 ## Congratulations that you have completed the first integration!  
 
-You can test it on Postman. To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
+You can test it on Postman. 
+To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
