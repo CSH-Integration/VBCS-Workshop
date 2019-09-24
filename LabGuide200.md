@@ -142,7 +142,9 @@ Now that we have data for our app to display we can build our mobile app.
 
 - You will see the new app created with the name **home-start**. To keep the page clean close all your web application pages.
 
-  ![](images/200/image016.png)
+  ![](images/200/new1.png)
+  ![](images/200/new2.png)
+  
 
 ### **STEP 3**: Add Mobile App Pages
 
@@ -205,7 +207,7 @@ Now that we have data for our app to display we can build our mobile app.
 
 - From Left Navigator open **app.css** by expanding **resources > css**
 
-  ![](images/200/image029.png)
+  ![](images/200/new3.png)
 
 - Copy paste the below code in app.css
 ```css
