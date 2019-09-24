@@ -25,6 +25,7 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 2 You will see the **VBCSWorkshop** we have provioned. Next, click the hambuger menu on the right and open the console
 ![](images/100/2.png)
 
+
 # Create the Insert Incidents Integration
 
 ### Step 1 Launch the OIC homepage, click the Integration tab
@@ -33,7 +34,7 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 2  Open the **Connection** and click **Create**
 ![](images/100/oic2.png)
 
-### Step 3 Search the ATP and select it
+### Step 3 Search for Oracle ATP and select it
 ![](images/100/oic3.png)
 
 ### Step 4 Give it a proper name and some description:
@@ -47,19 +48,19 @@ Password:Tetratech123**
 
 ### Step 6 Test it and save it
 
-### Step 7 Similarly, create a Rest connection like the above
+### Step 7 Next, you will create a empty Rest connection as Trigger 
 ![](images/100/oic6.png)
 
-### Step 8 Give the rest connection a name without the connection and security authentication details
+### Step 8 Give the rest connection a name. Note: you donn't need input the connection and security authentication details here
 ![](images/100/oic7.png)
 
 ### Step 9 Now, let's move to Integration tab, and click the Create on the top right
 ![](images/100/oic8.png)
 
-### Step 10 Choose the App-Driven architecture
+### Step 10 Choose the App-Driven Orchestration 
 ![](images/100/oic9.png)
 
-### Step 11 Name it with the prefix, like JK_CreateIncidents and click on create
+### Step 11 Name it with your prefix, like JK_CreateIncidents and click on create
 ![](images/100/oic10.png)
 
 ### Step 12 An empty canvas will appear and click on the + sign to add the Rest Connection you just created
