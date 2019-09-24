@@ -17,9 +17,15 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
   - Build the integration to insert data on ATP
   - Export/Import the Integrations to your environment
 
-# Using OIC to Connect the Database
+# Navigate to Integration Cloud
 
-##  1. Create the InsertIncidents Integration
+### Step 1 After you logged in to the Dashboard, click the hambuger menu on the top left and choose **Integration**
+![](images/100/1.png)
+
+### Step 2 You will see the **VBCSWorkshop** we have provioned. Next, click the hambuger menu on the right and open the console
+![](images/100/2.png)
+
+# Create the Insert Incidents Integration
 
 ### Step 1 Launch the OIC homepage, click the Integration tab
 ![](images/100/oic1.png)
