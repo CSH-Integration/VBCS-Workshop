@@ -66,15 +66,15 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ![](images/100/oic12.png)
 
 ## Step 14 Fill the JSON example for request and response
- Copy the following to Request: 
+![](images/100/oic13.png)
+ Copy to Request Inline: 
  
  {"IncidentNo":"3554",  "EmployeeID":"31324",  "Description":"HFKEKJAHKDSHFKD",  "Severity":"High",  "SiteID":10,  "Image":"TJUEWTW73125686427489724OW30"}
-![](images/100/oic13.png)
 
-Copy following to the Response:   
+![](images/100/oic14.png)
+Copy to the Response Inline:   
 
 {"result":"success”}
-![](images/100/oic14.png)
 
 ### Step 15 After you click Finish, there is a map created along with the connection
 
@@ -125,4 +125,6 @@ Copy following to the Response:
 ![](images/100/oic29.png)
 
 
-## Congratulations that you have completed the first integration! You can test it on Postman. To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
+## Congratulations that you have completed the first integration! You can test it on Postman. 
+
+To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
