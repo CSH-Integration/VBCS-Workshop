@@ -57,7 +57,7 @@ Package and click **Create**. This will import the integration metadata into VBC
 
   ![](images/300/image008.png)
 
-// Note: If the integrations didn't show up on your page, go back to the **Service Connection** and open **ics**. Under Authentication, override the authentication.//
+### Note: If the integrations didn't show up on your page, go back to the **Service Connection** and open **ics**. Under Authentication, override the authentication.
 
   ![](images/300/ics.png)
 
