@@ -57,6 +57,9 @@ Package and click **Create**. This will import the integration metadata into VBC
 
   ![](images/300/image008.png)
 
+// Note: If the integrations didn't show up on your page, go back to the **Service Connection** and open **ics**. Under Authentication, override the authentication.//
+
+  ![](images/300/ics.png)
 
 - Now that the connection is configured we'll create UI to record incidents. To do so we'll set up a variable on the page to store the request from user input and then send the request to OIC via the service connection we created in step 1.
 
