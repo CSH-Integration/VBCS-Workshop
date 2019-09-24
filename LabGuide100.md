@@ -76,7 +76,7 @@ Password:Tetratech123
 ![](images/100/oic14.png)
 Copy to the Response Inline:   
 
-{"result":"success”}
+{"result":"success"}
 
 ### Step 15 After you click Finish, there is a map created along with the connection
 
