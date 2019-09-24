@@ -39,10 +39,11 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 4 Give it a proper name and some description:
 ![](images/100/oic4.png)
 
-### Step 5 Fill in the connection and security authentication details
+### Step 5 Fill in the connection and security authentication details by using your database credentials.
+**Username:admin
+Password:Tetratech123**
+
 ![](images/100/oic5.png)
-Username:admin
-Password:Tetratech123
 
 ### Step 6 Test it and save it
 
@@ -58,7 +59,7 @@ Password:Tetratech123
 ### Step 10 Choose the App-Driven architecture
 ![](images/100/oic9.png)
 
-### Step 11 Name it with the prefix, like Jk_CreateIncidents and click on create
+### Step 11 Name it with the prefix, like JK_CreateIncidents and click on create
 ![](images/100/oic10.png)
 
 ### Step 12 An empty canvas will appear and click on the + sign to add the Rest Connection you just created
@@ -68,10 +69,18 @@ Password:Tetratech123
 ![](images/100/oic12.png)
 
 ## Step 14 Fill the JSON example for request and response
-![](images/100/oic13.png)
- Copy to Request Inline: 
+
+Copy to Request Inline:  ```Javascript {"IncidentNo":"3554",  
+  "EmployeeID":"31324",  
+  "Description":"HFKEKJAHKDSHFKD",  
+ "Severity":"High",  
+ "SiteID":10,  
+ "Image":"TJUEWTW73125686427489724OW30"} ```
+
+
  
- {"IncidentNo":"3554",  "EmployeeID":"31324",  "Description":"HFKEKJAHKDSHFKD",  "Severity":"High",  "SiteID":10,  "Image":"TJUEWTW73125686427489724OW30"}
+![](images/100/oic13.png)
+
 
 ![](images/100/oic14.png)
 Copy to the Response Inline:   
