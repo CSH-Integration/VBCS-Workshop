@@ -56,7 +56,7 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 10 Choose the App-Driven architecture
 ![](images/100/oic9.png)
 
-### Step 11 Give it a proper name and click on create
+### Step 11 Name it with the prefix, like Jk_CreateIncidents and click on create
 ![](images/100/oic10.png)
 
 ### Step 12 An empty canvas will appear and click on the + sign to add the Rest Connection you just created
@@ -66,7 +66,10 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ![](images/100/oic12.png)
 
 ## Step 14 Fill the JSON example for request and response
+ Copy the following to Request: {"IncidentNo":"3554",  "EmployeeID":"31324",  "Description":"HFKEKJAHKDSHFKD",  "Severity":"High",  "SiteID":10,  "Image":"TJUEWTW73125686427489724OW30"}
 ![](images/100/oic13.png)
+
+Copy following to the Response:   {"result":"success”}
 ![](images/100/oic14.png)
 
 ### Step 15 After you click Finish, there is a map created along with the connection
@@ -93,7 +96,7 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 22 Now let's do the mapping. Click on the first mapper
 ![](images/100/oic21.png)
 
-### Step 23 Map the attributes and click Validate on the top right corner
+### Step 23 Map the attributes and click **Validate** on the top right corner
 ![](images/100/oic22.png)
 
 ### Step 24 Go to the second mapper
@@ -118,6 +121,4 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ![](images/100/oic29.png)
 
 
-##  2. Import the integrations
-
-Congratulations that you have completed the first integration! You can test it on Postman. To save some time, we have imported the rest two integrations into the environment. Next you are ready for LabGuide 200.
+## Congratulations that you have completed the first integration! You can test it on Postman. To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
