@@ -19,7 +19,7 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 
 # Using OIC to Connect the Database
 
-##  Create the InsertIncidents Integration
+##  1. Create the InsertIncidents Integration
 
 ### Step 1 Launch the OIC homepage, click the Integration tab
 ![](images/100/oic1.png)
@@ -44,10 +44,10 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 8 Give the rest connection a name without the connection and security authentication details
 ![](images/100/oic7.png)
 
-### Step 9 Now, let's move to Integration tab
+### Step 9 Now, let's move to Integration tab, and click the Create on the top right
 ![](images/100/oic8.png)
 
-### Step 10 Click the Create on the top right, and choose the App-Driven architecture
+### Step 10 Choose the App-Driven architecture
 ![](images/100/oic9.png)
 
 ### Step 11 Give it a proper name and click on create
@@ -56,45 +56,62 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ### Step 12 An empty canvas will appear and click on the + sign to add the Rest Connection you just created
 ![](images/100/oic11.png)
 
-### Step 13 Give it a proper name and optional description
+### Step 13 Give it a proper name, fill the information like the screenshot, and click Next
 ![](images/100/oic12.png)
 
-### Step 14 Fill the information like the screenshot, and click Next
+## Step 14 Fill the JSON example for request and response
 ![](images/100/oic13.png)
+![](images/100/oic14.png)
 
 ### Step 15 After you click Finish, there is a map created along with the connection
 
-
 ### Step 16 Click the + sign again to add the ATP connection
-![](images/100/oic14.png)
-
-### Step 17 Give it a proper name and optional description. Choose what you want to do with the database, here we are trying to post Instances to database
 ![](images/100/oic16.png)
 
-### Step 18 Click on finish and you will see two mappers on the canvas
-
-### Step 19 Now let's do the mapping. Click on the first mapper
+### Step 17 Give it a proper name. Choose what you want to do with the database, here we are trying to insert instances to database
 ![](images/100/oic17.png)
 
-### Step 20 Map the attributes and click Validate on the top right corner
+### Step 18  Click Next, choose **Admin** as Schema and hit search. Locate **Incidents** table and Import tables
 ![](images/100/oic18.png)
 
-### Step 21 Go to the second mapper
-![](images/100/oic19.png)
-
-### Step 22 Click on the Status
+### Step 19 Click Next and click **Edit**
 ![](images/100/oic20.png)
 
-### Step 23 Type in "Success" and click Save
+### Step 20 Select all the attributes except **status, comments, incidentID**
+![](images/100/oic19.png)
+
+
+### Step 21 Click on finish and you will see two mappers on the canvas
+
+
+### Step 22 Now let's do the mapping. Click on the first mapper
 ![](images/100/oic21.png)
 
-### Step 24 Last step is to add the tracking, click the hamburger icon on the top right corner
+### Step 23 Map the attributes and click Validate on the top right corner
 ![](images/100/oic22.png)
 
-### Step 25 Go back to the homepage and click on the Activate button
+### Step 24 Go to the second mapper
 ![](images/100/oic23.png)
 
-### Step 26 Allow Tracking and Payload
+### Step 25 Click on the **Result**
 ![](images/100/oic24.png)
 
-Note: Now your first integration is finished and you can test it on Postman
+### Step 26 Type in "Success" and click Save
+![](images/100/oic25.png)
+
+### Step 27 Last step is to add the tracking, click the hamburger icon on the top right corner
+![](images/100/oic26.png)
+
+### Step 28 Drag **IncidentNo** to tracking Field
+![](images/100/oic27.png)
+
+### Step 29 Go back to the homepage and click on the Activate button
+![](images/100/oic28.png)
+
+### Step 30 Allow Tracking and Payload
+![](images/100/oic29.png)
+
+
+##  2. Import the integrations
+
+Congratulations that you have completed the first integration! You can test it on Postman. To save some time, we have imported the rest two integrations into the environment. Next you are ready for LabGuide 200.
