@@ -138,7 +138,8 @@ Now that we have data for our app to display we can build our mobile app.
 
 - You will be presented with the New Mobile Application window. In this window, name the mobile application ```HealthSafetyMobileApp``` and choose the  Horizontal navigation style, in Navigation Items delete one item by clicking on **X** enter ```Home``` and ```My Incidents``` then click **Finish**.
 
-  ![](images/200/image015.png)
+  ![](images/200/new1.png)
+  ![](images/200/new2.png)
 
 - You will see the new app created with the name **home-start**. To keep the page clean close all your web application pages.
 
@@ -205,7 +206,7 @@ Now that we have data for our app to display we can build our mobile app.
 
 - From Left Navigator open **app.css** by expanding **resources > css**
 
-  ![](images/200/image029.png)
+  ![](images/200/new3.png)
 
 - Copy paste the below code in app.css
 ```css
