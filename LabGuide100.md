@@ -1,4 +1,4 @@
-![](images/100/Picture-Title.png)
+![](images/200/Picture-Title.png)
 
 # LabGuide 100 - Creating the ATP Integration on OIC
 
@@ -66,10 +66,14 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ![](images/100/oic12.png)
 
 ## Step 14 Fill the JSON example for request and response
- Copy the following to Request: {"IncidentNo":"3554",  "EmployeeID":"31324",  "Description":"HFKEKJAHKDSHFKD",  "Severity":"High",  "SiteID":10,  "Image":"TJUEWTW73125686427489724OW30"}
+ Copy the following to Request: 
+ 
+ {"IncidentNo":"3554",  "EmployeeID":"31324",  "Description":"HFKEKJAHKDSHFKD",  "Severity":"High",  "SiteID":10,  "Image":"TJUEWTW73125686427489724OW30"}
 ![](images/100/oic13.png)
 
-Copy following to the Response:   {"result":"success”}
+Copy following to the Response:   
+
+{"result":"success”}
 ![](images/100/oic14.png)
 
 ### Step 15 After you click Finish, there is a map created along with the connection
