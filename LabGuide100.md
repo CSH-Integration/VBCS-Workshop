@@ -41,6 +41,8 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 
 ### Step 5 Fill in the connection and security authentication details
 ![](images/100/oic5.png)
+Username:admin
+Password:Tetratech123
 
 ### Step 6 Test it and save it
 
