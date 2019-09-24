@@ -121,7 +121,7 @@ Now we'll add a page to Create Incident and once that is complete we'll define v
    
    ![](images/300/image020.png)
 
-- In left Navigation Panel under **General** tab Enter **Label Hint** as ```Employee ID```
+- In right Navigation Panel under **General** tab Enter **Label Hint** as ```Employee ID```
 
 - Now open **Data** tab and click **down arrow** next to **fx** and select ```EmployeeID``` under **createIncident** object
 
@@ -131,7 +131,7 @@ Now we'll add a page to Create Incident and once that is complete we'll define v
 
   ![](images/300/image023.png)
 
-- In left Navigation Panel under **General** tab Enter **Label Hint** as ```Name```
+- In right Navigation Panel under **General** tab Enter **Label Hint** as ```Name```
 
 - Now open **Data** tab and click **down arrow** next to **fx** and select ```empName``` 
 
@@ -141,7 +141,7 @@ Now we'll add a page to Create Incident and once that is complete we'll define v
 
   ![](images/300/image025.png)
 
-- In left Navigation Panel click **Add Options** to populate drop-down data
+- In right Navigation Panel click **Add Options** to populate drop-down data
 
   ![](images/300/image026.png)
 
@@ -167,7 +167,7 @@ Now we'll add a page to Create Incident and once that is complete we'll define v
 
   ![](images/300/image031.png)
 
-- In left Navigation Panel click **Create Static List of Options** to create options for radio button
+- In right Navigation Panel click **Create Static List of Options** to create options for radio button
 
 - In pop up enter following options
 Label : Value
