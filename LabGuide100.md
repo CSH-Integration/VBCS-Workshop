@@ -2,7 +2,7 @@
 
 # LabGuide 100 - Creating the ATP Integration on OIC
 
-# Introduction
+## Introduction
 
 The Health&Safe department is trying to secure their construction sites by allowing employees to report the security issues. To
 be able to provide a convenient and efficient way, they plan to take advantage of VBCS and build a PWA application. Meanwhile,
@@ -10,7 +10,7 @@ the admin team can monitor all the incidents and take actions on time.
 
 This is the first of several labs that are part of the **Oracle Visual Builder Cloud Service Workshop.** During this workshop you will explore Oracle's  Application Integration, and Visual Builder Cloud Service and its features from the persona of **Javascript Developer**, Joy. You will follow Joy as he creates an integration, and links your on premise database or Autonomous Database to the PWA application. In our first lab you will create an integration using ATP adapter to be able to store the new created incidents there.
 
-# Objectives
+## Objectives
 
 - Explore the Application Integration
   - Configure the connections of ATP
@@ -125,6 +125,6 @@ Copy to the Response Inline:
 ![](images/100/oic29.png)
 
 
-## Congratulations that you have completed the first integration! You can test it on Postman. 
+## Congratulations that you have completed the first integration!  
 
-To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
+You can test it on Postman. To save some time, we have imported the rest two integrations into the environment. Next you are ready for [Lab 200](LabGuide200.md)
