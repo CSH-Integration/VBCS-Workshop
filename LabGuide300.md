@@ -108,19 +108,18 @@ Now we'll add a page to Create Incident and once that is complete we'll define v
 
 - Create last variable and enter **id** as ```empName``` and select **Type** as ```String``` and click **Create**
 
-  ![](images/300/image018.png)
+  ![](images/300/image019.png)
 
 - Now we have defined our variables let us create the form to take user input. Go back to **Designer** page by clicking the icon show below.
 
-  ![](images/300/image019.png)
-
+  ![](images/300/image021.png)
+  
 - Now, Drag and Drop **Form Layout** from Components on top of **Flex Container** in page structure.
 
-  ![](images/300/image020.png)
 
 - Now Drag and Drop **Input Text** from Components on top of **Form Layout** in page structure.
-
-  ![](images/300/image021.png)
+   
+   ![](images/300/image020.png)
 
 - In left Navigation Panel under **General** tab Enter **Label Hint** as ```Employee ID```
 
@@ -219,14 +218,18 @@ Low : low
 
 In this steps we will define action chains to take picture from camera and submit the data to call OIC service for posting data into database. Also we will see how to write custom client-side javascript to display the image in UI and convert blob to base64String so that database can store it. 
 
-- Click on **JS** button on the navigation pane and copy paste the below javascript functions, after ```var PageModule = function PageModule() {};``` and before ```return PageModule;```
-
+- Go to Home, and click on Image. Under **All**, choose **General Attributes**:
+   ![](images/300/new1.png)
+   
+- Click on **JS** button on the navigation pane and copy paste the below javascript functions, after ```var PageModule = function PageModule() {};``` and before ```return PageModule;``` **Remember to replace the ("img-ID") with yours.**
+   ![](images/300/image041.png)
+   
 ```javascript
       //This function loads/displays the picture in image field (UI)
   PageModule.prototype.showPic = function(fileBlob) {
     const blobURL = URL.createObjectURL(fileBlob);
     // Release the BLOB after it loads.
-    document.getElementById("img-1689111029-1").onload = function() {
+    document.getElementById("img-YOUR IMAGE ID").onload = function() {
       URL.revokeObjectURL(blobURL);
     };
     return blobURL;
@@ -248,7 +251,7 @@ In this steps we will define action chains to take picture from camera and submi
 
   };
 ```
-  ![](images/300/image041.png)
+ 
 
 
 - Go back to designer page from navigation pane
@@ -287,9 +290,11 @@ In this steps we will define action chains to take picture from camera and submi
 
 - Select Return Type as **String**
 
+   ![](images/300/new2.png)
+
 - Again Drag and drop **Call Module Function** after **callModuleFunction show pic** and click **Select Module function** button on right panel
 
-  ![](images/300/image050.png)
+  ![](images/300/new3.png)
 
 - From pop-up Select Page function as **convertToBase64String** and click **Select**
 
@@ -310,48 +315,46 @@ In this steps we will define action chains to take picture from camera and submi
   ![](images/300/image052.png)
 
 - Map the **callModuleFunction1** from Source to **capturedImage** on Target, similarly mao **callModuleFunction2** from source to **Image** (under createIncident Object). Click **Save** to close the pop-up
-
+  ![](images/300/image053.png)
+  
 - Now again Go back to designer page from navigation pane
 
 - Select **Submit** button from page structure and click **Events** tab
-
-  ![](images/300/image053.png)
-
+ ![](images/300/image054.png)
+  
 - Click **+ New Event** and Select **Quick Start** action
 
   ![](images/300/image043.png)
 
 - This will open up the action chain flow. Enter action chain id as ```SubmitData```
-
-  ![](images/300/image054.png)
+  ![](images/300/image055.png)
+  
 
 - From General Actions Drag and drop **Call REST Endpoint** action on the action chain and click on **Select Endpoint** button from right panel.
 
   ![](images/300/image055.png)
 
 - To Select OIC endpoint From the pop-up expand **Service Connections --> ics --> CreateIncidents --> POST** then click **Select**
-
-  ![](images/300/image056.png)
+  ![](images/300/image057.png)
 
 - Click **Assign** button next to paramater
-
-  ![](images/300/image057.png)
+  ![](images/300/image058.png)
+  
 
 - In the pop-up drag and drop **createIncident** object from source to **body** parameter on target. Click **Save** to close the pop-up
 
-  ![](images/300/image058.png)
+  ![](images/300/image059.png)
 
 - Now from General Actions drag and drop **Fire Notification** on **success** path and in right panel enter **Summary** as ```Incident Created Successfully``` and **Notification Type** as **confirmation**
 
-  ![](images/300/image059.png)
+  ![](images/300/image060.png)
 
 - Similarly from General Actions drag and drop **Fire Notification** on **failure** path and in right panel enter **Summary** as ```Incident creation Failed``` and **Notification Type** as **error**
 
-  ![](images/300/image060.png)
+  ![](images/300/image061.png)
 
 - Now before testing our app lets go back to **home-start** page and select **Incident** button and select **Events** tab from right panel
-
-  ![](images/300/image061.png)
+  ![](images/300/image062.png)
 
 - Click **+ New Event** and Select **Quick Start** action
 
@@ -359,33 +362,29 @@ In this steps we will define action chains to take picture from camera and submi
 
 - This will open up the action chain flow. Enter action chain id as ```navToCreateIncident```
 
-  ![](images/300/image062.png)
+  ![](images/300/image063.png)
 
 - From Navigation Actions Drag and drop **Navigate** action on the action chain and click on **Select Target** button from right panel.
 
-  ![](images/300/image063.png)
+  ![](images/300/image064.png)
 
 - From the pop-up select **Peer Page**
 
-  ![](images/300/image064.png)
+  ![](images/300/image065.png)
 
 - Now Select **home-createincident** and click **Select button**.
 
-  ![](images/300/image065.png)
+  ![](images/300/image066.png)
 
 
 - Let's test our app until this point click on **Play** button on top right side. This will launch the app in new tab.
 
-  ![](images/300/image066.png)
+  ![](images/300/image067.png)
 
 - You should be able to see your app in emulator as shown below.
 
-  ![](images/300/image067.png)
 
 - Now Click on **Incident** Enter the **details**, **upload picture** and hit **Submit** 
 
-- If you get the error check browser console as shown below
 
-  ![](images/300/image068.png)
-
-- **This completes Lab 300 and the Workshop**
+- **This completes Lab 300 and continue to the Lab 400 [Labguide400]**
