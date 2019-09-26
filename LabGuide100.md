@@ -41,8 +41,8 @@ This is the first of several labs that are part of the **Oracle Visual Builder C
 ![](images/100/oic4.png)
 
 ### Step 5 Fill in the connection and security authentication details by using your database credentials.
-**Username:admin
-Password:Tetratech123**
+**Username**: provided by the trainer
+**Password**: provided by the trainer
 
 ![](images/100/oic5.png)
 
