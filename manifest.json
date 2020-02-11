@@ -7,43 +7,31 @@
     "interactive": "https://launch.oracle.com/?vbcs",
     "labs": [
       {
-        "number": "0",
-        "filename": "README.md",
-        "title": "Getting a Cloud Trial",
-        "description": "Get a free Cloud Account to perform this lab."
-      },
-      {
-        "number": "50",
-        "filename": "LabGuide50.md",
-        "title": "Lab 50: Provisioning VBCS",
-        "description": "Learn how to provision the Visual Builder Cloud Service."
-      },
-      {
         "number": "100",
         "filename": "LabGuide100.md",
-        "title": "Lab 100: Creating a Application",
-        "description": "Learn how to create a Visual Builder application and add business data to display. "
+        "title": "Lab 100: Creating the ATP Integration on OIC",
+        "description": "Learn how to create a Integration to communicate with ATP Database. "
       },
       {
         "number": "200",
         "filename": "LabGuide200.md",
-        "title": "Lab 200: Adding, Update and Editing Pages",
+        "title": "Lab 200: Creating a Visual Builder Application",
         "description":
-          "This lab will walk you through adding, updating and editing web pages to your application."
+          "This lab will walk you through creating a Visual Builder application and add business data to display."
       },
       {
         "number": "300",
         "filename": "LabGuide300.md",
-        "title": "Lab 300: Creating a Mobile Application",
+        "title": "Lab 300: Incorporating OIC Integration into VBCS Application",
         "description":
-          "This lab will walk you through creating a mobile application and displaying an inventory list."
+          "This lab will walk you through adding service connnections to VBCS and creating UI for mobile application "
       },
       {
         "number": "400",
         "filename": "LabGuide400.md",
-        "title": "Lab 400: Incorporating REST Data into the Application",
+        "title": "Lab 400: Retrive Incidents from Database via Integration (OIC) and display into mobile app",
         "description":
-          "Learn how to create a mobile application page for viewing an inventory item's details and incorporate data from a REST service."
+          "Learn how to create a mobile application page for viewing an incidents details and incorporate data from a REST service."
       }
     ]
   }
